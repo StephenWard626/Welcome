@@ -1,1 +1,11 @@
-﻿
+﻿@{ 
+    //Just changes the title of the page displayed on the tab 
+    ViewBag.Title = "TimeZone";
+}
+
+@{
+    //Code for the Timezone to be worked out
+    String zone = TimeZone.CurrentTimeZone.StandardName;
+ }
+
+<h2>@ViewBag.TimeMessage (@zone)</h2>
