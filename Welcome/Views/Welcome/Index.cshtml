@@ -5,7 +5,9 @@
 
 @{
     //Code for the Timezone to be worked out
-    String zone = TimeZone.CurrentTimeZone.StandardName;
+    //String zone = TimeZone.CurrentTimeZone.StandardName;
+    //The below is using the newer TimeZoneInfo
+    String zone = TimeZoneInfo.Local.StandardName;
  }
 
 <h2>@ViewBag.TimeMessage (@zone)</h2>
